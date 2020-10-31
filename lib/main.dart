@@ -96,6 +96,7 @@ mutation makeAlbum(\$title: String!, \$userId: ID!){
               mainAxisSize: MainAxisSize.min,
               children: [
                 AuthButton(
+                  busy: result.loading,
                   buttonColor: Colors.greenAccent[700],
                   name: Text(
                     "Post",
